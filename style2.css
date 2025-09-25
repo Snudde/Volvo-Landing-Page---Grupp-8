@@ -1,0 +1,303 @@
+:root {
+  --font: "Funnel Sans", sans-serif;
+  --fontgray: #616161;
+  --backgroudgray: #fafafa;
+  --fontblack: #000000;
+}
+
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: inherit;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+footer {
+  background-color: var(--backgroudgray);
+  display: flex;
+  flex-direction: column;
+  /* font-family: var(--font); */
+  align-items: center;
+}
+
+.footer-center-section {
+  justify-content: center;
+  display: flex;
+  padding: 40px;
+}
+
+.footer-links-container {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  max-width: 588px;
+}
+
+.footer-links-column h6 {
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: var(--fontgray);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.footer-links-column ul {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer-links-column li {
+  margin-top: 15px;
+}
+
+.footer-links-column a:hover {
+  text-decoration: underline;
+}
+
+.fotter-links-column li,a {
+  text-decoration: none;
+  color: var(--fontblack);
+}
+
+.footer-socials-section ul {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  gap: 50px;
+  list-style: none;
+}
+.footer-bottom-links-section ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+}
+
+.facebook svg {
+  width: 20px;
+  height: 20px;
+}
+
+.facebook path#path4680 {
+  fill: #000 !important;
+}
+
+.instagram svg {
+  width: 20px;
+  height: 20px;
+}
+
+.threads svg {
+  width: 20px;
+  height: 20px;
+}
+
+.youtube svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-totop svg {
+  width: 10px;
+  height: 20px;
+  display: inline-block;
+}
+
+.footer-totop a:hover {
+    text-decoration: underline;
+}
+
+.footer-map-pin a:hover {
+    text-decoration: underline;
+}
+
+.footer-map-pin svg {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.footer-center-section.footer-map-pin a {
+  display: inline-flex;      
+  align-items: center;  
+  gap: 8px;     
+    font-weight: 700;
+
+}
+
+.footer-center-section.footer-totop a {
+  display: inline-flex;      
+  align-items: center;       
+  gap: 8px;
+  font-weight: 700;
+}
+
+.footer-bottom-links-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.footer-bottom-links-section a {
+  color: var(--fontgray);
+  text-decoration: none;
+}
+
+
+
+.footer-copyright-section {
+  color: var(--fontgray);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+
+
+.footer-socials-section ul li:hover {
+background-color: rgba(211, 211, 211, 0.384);
+transition: 0.3s ease-in-out;
+}
+
+.footer-socials-section ul li {
+    background-color: transparent;
+    border-radius: 50%;
+    height: 37px;
+    width: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-div img{
+  width: 40rem;
+  height: auto;
+}
+
+.car-div{
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.box {
+  background-color: rgba(248, 245, 245, 0.546);
+  width: 320px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.box:hover{
+  background-color: rgba(219, 214, 214, 0.546);
+}
+
+.selling-boxes {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5rem;
+  gap: 5px;
+}
+
+.entity {
+
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  top: 1px;
+    font-weight: 300;
+}
+
+.box h3{
+  display: inline-block;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.car-section-info {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+} 
+
+.car-info-main {
+  max-width: 1200px;
+  height: 450px;
+
+  display: flex;
+  margin-top: 150px;
+
+}
+
+.car-info-left {
+  height: 450px;
+  max-width: 600px;
+  width: 100%;  
+  background-size: cover;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(https://www.volvocars.com/images/cs/v3/assets/blt618dcb179a89242d/blt3bd9a846ffd77663/68a2dec844af5e36a5835914/XC90_TIM01023_2560x1920.jpg?branch=prod_alias&quality=85&format=auto&iar=0&w=1920&imdensity=1);
+
+}
+
+.car-info-right {
+  max-width: 600px;
+  height: 450px;
+  box-sizing: border-box;
+  padding: 80px;
+}
+
+.car-info-right h1 {
+margin-bottom: 20px;
+font-size: 30px;
+} */

@@ -1,0 +1,203 @@
+/* Basic CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+
+}
+
+html, body {
+  height: 100%;
+  font-family: inherit;
+}
+
+body {
+  line-height: 1.5;
+}
+
+ img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+} 
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:root {
+  --font: "Funnel Sans", sans-serif;
+  --fontgray: #616161;
+  --backgroudgray: #fafafa;
+  --fontblack: #000000;
+}
+
+/*------------Nav & Header---------*/
+
+.section-ul{
+  list-style: none;
+ 
+  
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+ 
+}
+
+.section-left, .section-right{
+  display: flex;
+  gap: 1rem;
+}
+
+.section-left li{
+  cursor: pointer;
+  border-radius: 0.6rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.section-left li:hover{
+  background-color: rgba(240, 237, 237, 0.858);
+}
+
+.section-left{
+  align-self: flex-start;
+  gap: 30px;
+}
+
+.section-right{
+  font-weight: normal;
+  color: rgba(79, 76, 76, 0.997);
+ 
+}
+
+.section-right li {
+    list-style: none;
+    display: inline-block;
+}
+
+.fa-bars{
+  font-size: 22px;
+  margin-top: 2px;
+  color: rgba(79, 76, 76, 0.997);
+}
+
+.fa-user{
+  font-weight: normal;
+}
+
+.section-right i {
+  line-height: 1.5;
+}
+
+.volvo-logo img{  
+  height: 10px;
+  width: 100px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.volvo-logo {
+  display: flex;
+  align-items: center;
+}
+
+.below-nav{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 200;
+}
+
+.below-nav a{
+  text-decoration: underline;
+  margin-left: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+/*------------Nav & Header---------*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 70px;
+
+}
+
+.hero {
+    background: url("https://www.volvocars.com/images/cs/v3/assets/blt618dcb179a89242d/blte7ac41d2ac79db1d/689def8f38dd7454353a485f/EX40_SKW_116_2560x1096_2.jpg?branch=prod_alias&amp;quality=85&amp;format=auto&amp;iar=0&amp;w=640&amp;imdensity=1 640w, https://www.volvocars.com/images/cs/v3/assets/blt618dcb179a89242d/blte7ac41d2ac79db1d/689def8f38dd7454353a485f/EX40_SKW_116_2560x1096_2.jpg?branch=prod_alias&amp;quality=85&amp;format=auto&amp;iar=0&amp;w=750&amp;imdensity=1 750w, https://www.volvocars.com/images/cs/v3/assets/blt618dcb179a89242d/blte7ac41d2ac79db1d/689def8f38dd7454353a485f/EX40_SKW_116_2560x1096_2.jpg?branch=prod_alias&amp;quality=85&amp;format=auto&amp;iar=0&amp;w=828&amp;imdensity=1 828w, https://www.volvocars.com/images/cs/v3/assets/blt618dcb179a89242d/blte7ac41d2ac79db1d/689def8f38dd7454353a485f/EX40_SKW_116_2560x1096_2.jpg?branch=prod_alias&amp;quality=85&amp;format=auto&amp;iar=0&amp;w=1080&amp;imdensity=1 1080w, https://www.volvocars.com/images/cs/v3/assets/blt618dcb179a89242d/blte7ac41d2ac79db1d/689def8f38dd7454353a485f/EX40_SKW_116_2560x1096_2.jpg?branch=prod_alias&amp;quality=85&amp;format=auto&amp;iar=0&amp;w=1200&amp;imdensity=1 1200w, https://www.volvocars.com/images/cs/v3/assets/blt618dcb179a89242d/blte7ac41d2ac79db1d/689def8f38dd7454353a485f/EX40_SKW_116_2560x1096_2.jpg?branch=prod_alias&amp;quality=85&amp;format=auto&amp;iar=0&amp;w=1920&amp;imdensity=1 1920w, https://www.volvocars.com/images/cs/v3/assets/blt618dcb179a89242d/blte7ac41d2ac79db1d/689def8f38dd7454353a485f/EX40_SKW_116_2560x1096_2.jpg?branch=prod_alias&amp;quality=85&amp;format=auto&amp;iar=0&amp;w=2048&amp;imdensity=1 2048w, https://www.volvocars.com/images/cs/v3/assets/blt618dcb179a89242d/blte7ac41d2ac79db1d/689def8f38dd7454353a485f/EX40_SKW_116_2560x1096_2.jpg?branch=prod_alias&amp;quality=85&amp;format=auto&amp;iar=0&amp;w=3840&amp;imdensity=1 3840w");
+    background-size: cover;
+    height: 100vh;
+     position: relative 
+
+}
+
+.hero::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.2;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.inner-container {
+    position: absolute;
+    left: 70px;
+    bottom: 250px;
+    z-index: 1;
+}
+
+.img-text-inner {
+    color: white;
+}
+
+.text-inner-line1 {
+    font-size: 3rem;
+    line-height: 1.1;
+}
+
+.text-inner-line3 {
+    margin: 18px 0;
+    font-size: 1.2rem;
+}
+
+.btn1 {
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.btn2 {
+    padding: 15px;
+    background-color: rgba(0,0,0,0);
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+}
+
+.btn1:hover {
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.btn2:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.3);
+}
